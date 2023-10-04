@@ -7,6 +7,7 @@ var http = require('http'),
     ccavReqHandler = require('./ccavRequestHandler.js'),
     ccavResHandler = require('./ccavResponseHandler.js');
 
+app.use(express.json());
 app.use(express.static('public'));
 app.set('views', __dirname + '/public');
 app.engine('html', require('ejs').renderFile);
