@@ -67,9 +67,8 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon run_node.js",
-    "build": "node run_node.js"
+    "build": "node run_node.js",
+    "start": "nodemon run_node.js"
   },
   "author": "",
   "license": "ISC"
