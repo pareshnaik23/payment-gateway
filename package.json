@@ -67,8 +67,8 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "build": "node run_node.js",
-    "start": "nodemon run_node.js"
+    "build": "npm install && node index.js",
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC"
