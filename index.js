@@ -13,7 +13,7 @@ app.set('views', __dirname + '/public');
 app.engine('html', require('ejs').renderFile);
 
 
-app.get('/about', function (req, res) {
+app.get('/payment', function (req, res) {
     res.render('dataFrom.html');
 });
 
