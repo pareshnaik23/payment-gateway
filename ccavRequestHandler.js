@@ -2,11 +2,13 @@ var http = require('http'),
     fs = require('fs'),
     ccav = require('./ccavutil.js'),
     qs = require('querystring');
+const dotenv = require("dotenv")
+dotenv.config();
 
 exports.postReq = function (request, response) {
     var body = '',
-        workingKey = '2385199A3A796660313E03515C1CB641',	//Put in the 32-Bit key shared by CCAvenues.
-        accessCode = 'AVZV05KL40BE54VZEB',			//Put in the Access Code shared by CCAvenues.
+        workingKey = process.env.WORKING_KEY,	//Put in the 32-Bit key shared by CCAvenues.
+        accessCode = process.env.ACCESS_CODE,			//Put in the Access Code shared by CCAvenues.
         encRequest = '',
         formbody = '';
 
